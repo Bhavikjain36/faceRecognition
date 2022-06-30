@@ -11,8 +11,8 @@ import mysql.connector
 from datetime import datetime
 
 #AWS Authentications
-client = boto3.client('rekognition', aws_access_key_id='AKIAITCZKIVJA7XIAWZQ',
-                      aws_secret_access_key='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', region_name='ca-central-1')
+client = boto3.client('rekognition', aws_access_key_id='********',
+                      aws_secret_access_key='*******', region_name='ca-central-1')
 #Collection where faces are added.
 collection = 'myfaces'
 
@@ -21,7 +21,7 @@ def connectToDatabase(fobidparam):
     mydb = mysql.connector.connect(
                 host="facerecognitiondb.cxd8buh2v95q.ca-central-1.rds.amazonaws.com",
                 username="root",
-                password="Bhavik36",
+                password="****",
                 database="face_recognition"
             )
     mycursor = mydb.cursor()
