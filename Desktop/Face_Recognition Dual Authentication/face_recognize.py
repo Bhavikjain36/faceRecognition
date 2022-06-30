@@ -44,7 +44,7 @@ def getUserDetails(para):
     mydb = mysql.connector.connect(
                 host="facerecognitiondb.cxd8buh2v95q.ca-central-1.rds.amazonaws.com",
                 username="root",
-                password="Bhavik36",
+                password="*****",
                 database="face_recognition"
             )
     mycursor = mydb.cursor()
